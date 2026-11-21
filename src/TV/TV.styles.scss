@@ -1,0 +1,76 @@
+.chennel-movies{
+    display: flex !important;
+    background-color: black !important;
+     overflow-x: auto !important;
+  overflow-y: hidden !important;
+    scroll-behavior: smooth !important;
+    stroke-width: none !important;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.chennel-card  img{
+    width: 200px !important ;
+    height: 190px !important;
+    object-fit: cover !important;
+  
+}
+
+.chennel-card{
+    flex:  0 0 200px !important;
+    gap: 20px !important;
+   margin: 20px;
+width: auto !important;
+ height: 200px;
+ transition: transform  1s ease ;
+ &:hover{
+    transform: scale(1.15);
+    z-index: 1 !important;
+ }
+}
+.background-card {
+    
+  background: linear-gradient(135deg, #3d7af5, #E83E9B) !important;
+}
+
+.movie-row{
+    position: relative !important;
+    display: flex !important;
+    width: 100% !important;
+    align-items: center !important;
+}
+
+.scroll-arrows{
+    position: absolute !important;
+    top: 17px!important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center  !important;
+    color: white !important;
+    width: 30px !important;
+height: 80% !important;
+z-index: 1000 !important;
+margin-left: 12px !important;
+  background: rgba(30, 30, 30, 0.1) !important;
+  
+   &:hover{
+    background-color: #444;
+   }
+&:hover{
+
+  background: rgba(70, 70, 70, 0.7) !important;
+}
+ 
+}
+  .left-arrows{
+    left: 0 !important;
+   }
+   .right-arrows {
+right: 0 !important;
+   }
+
+   .channel-section{
+    background-color: black;
+    color: white;
+   }

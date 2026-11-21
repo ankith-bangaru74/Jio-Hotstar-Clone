@@ -1,0 +1,57 @@
+.sidebar {
+  width: 70px !important;
+  flex-shrink: 0;
+  .MuiDrawer-paper {
+    width: 70px;
+    overflow-x: hidden;
+    background: #080808 !important;
+
+    color: rgb(143, 142, 142) !important;
+    border-right: 1px solid black !important;
+  transition: width 1s ease;
+    svg {
+        color: lightgray;
+        width: 18px;
+    }
+  }
+
+ .menu-items{
+  min-height: 51px;
+  padding-left: 30px;
+
+  &.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.12);
+
+    .MuiListItemIcon-root {
+        color: white;
+    }
+  }
+
+  .nav-name{
+    opacity: 0;
+    white-space: nowrap;
+   transition: 0.3s ease;
+  }
+
+   &:hover{
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: white;
+   }
+  }
+    &:hover{
+        .MuiDrawer-paper{
+            width: 230px;
+        }
+
+        .nav-name{
+            opacity: 1;
+        }
+    }
+}
+
+.logo img {
+  width: auto;
+  height: 30px;
+  margin: 20px;
+}

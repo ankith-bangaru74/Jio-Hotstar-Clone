@@ -1,0 +1,137 @@
+
+.search-img{
+    width: 150px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 8px !important;
+}
+.search-main{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    align-items: center;
+    gap: 5px !important;
+    padding: 20px 0;
+    margin: 20px;
+}
+.search-card{
+    margin-bottom: 20px !important;
+    position:  relative !important;
+    
+}
+
+.search-page{
+   
+padding-top: 20px !important;
+ padding-bottom: 5rem !important;
+    height: 180vh !important;
+   background-color: black;
+}
+.search-bar{
+    position: relative !important;
+    background-color: #444;
+    margin-top: 12px !important;
+    width: 90%  !important;
+   margin-left: 5% !important;
+  
+   .MuiSvgIcon-root {
+color: white !important;
+font-size: 30px !important;
+display: block !important;
+
+  fieldset{
+    border-color: #444
+  };
+
+
+  &:hover fieldset{
+    border-color: #777;
+  }
+
+  &:Mui-focused fieldser{
+    border-color: #888;
+  }
+   }
+
+   .muiInputBase-input {
+    color: white;
+   }   
+   &::placeholder{
+    color: #bdbdbd;
+    opacity: 1;
+   }
+  .MuiInputAdornment-root {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .MuiSvgIcon-root {
+    color: white !important;
+    font-size: 25px !important;
+  }
+}
+
+.preview-info{
+  color: #787777;
+    font-size: 13px !important;
+    border-radius: 12px !important;
+}
+.movie-hover{
+    position: absolute !important;
+ 
+    top: -1px  !important;
+    left: 50%   !important;
+       transform: translateX(-50%) !important;
+    transform: center center !important;    
+    width: 250px !important;
+    height: 200px !important;
+    
+    display: flex;
+    border-radius: 12px !important;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1000;
+         animation: movieExpand 0.3s ease forwards;
+           text-align: center !important;
+         @keyframes movieExpand {
+            from {
+                opacity: 0 !important;
+                transform: translateX(-50%) scale(0.85);
+            }
+            to {
+                opacity: 1 !important;
+                transform: translateX(-50%) scale(1);
+            }
+         }
+}
+
+.movie-hover img{
+      height: 200px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+} 
+.preview-btn{
+       background-color: #242424 !important;
+       border-radius: 12px !important;
+       color: white !important;
+}
+
+.no-result{
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+}
+
+.search-loader{
+    margin-top: 10rem !important;
+    color: #3d7af5 !important;
+
+    .MuiCircularProgress-circle {
+        stroke: #E83E9B;
+    }
+}

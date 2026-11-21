@@ -1,0 +1,36 @@
+.watch-page{
+    min-height: 100vh !important;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+}
+.watch-back{
+    margin-bottom: 20px;
+    display: flex !important;
+    align-items: center !important;
+    
+    border: none;
+    font-size: px;
+    font-style: italic;
+    gap: 8px;
+    color: white;
+    background-color: transparent !important;
+    cursor: pointer !important;
+     &:hover{
+       color:  #E83E9B;
+        border-color: #E83E9B !important;
+     }
+}
+
+.watch-player{
+    display: flex !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+}
+.watch-video{
+    width: 100% !important;
+    height: 85vh !important;
+}

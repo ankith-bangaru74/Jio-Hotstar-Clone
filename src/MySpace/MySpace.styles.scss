@@ -1,0 +1,164 @@
+.login-img{
+    width: auto !important;
+    height: 200px !important;
+}
+
+.login-page{
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center;
+    justify-content: center !important;
+    align-items: center !important;
+    color: white !important;
+    min-height: 100vh;
+}
+.login-btn {
+    margin-top: 20px !important;
+   width: 200px !important;
+    background: linear-gradient(
+        90deg,
+         #3d7af5 60%,
+      #E83E9B 100%
+    ) !important;
+}
+.login-main{
+    min-height: 100vh !important;
+    background-color: black !important;
+}
+
+
+
+
+.login-dialog {
+  .MuiPaper-root {
+    background: #101522;
+    color: white;
+    border-radius: 15px;
+    width: 650px;
+    max-width: 90vw;
+  }
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .MuiIconButton-root {
+    color: white;
+  }
+}
+
+.dialog-content {
+    display: flex !important;
+    gap: 50px;
+  padding: 25px !important;
+}
+
+.login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  min-height: 230px;
+}
+
+.qr-login,
+.number-login {
+    padding-left: 5rem !important;
+    margin: 20px 30px;
+  flex: 1;
+  text-align: center;
+}
+
+.qr-code {
+    
+  img {
+    width: 150px;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+     margin: 12px !important;
+  }
+
+  h6 {
+    margin-top: 10px;
+  }
+
+  p {
+    color: #aaa;
+  }
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  border-left: 1px solid #555;
+  position: relative;
+
+  span {
+    position: absolute;
+    background: #101522;
+    padding: 8px 0;
+    color: #aaa;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.phone-login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile-input {
+  input {
+    color: white;
+  }
+
+  label {
+    color: #aaa;
+  }
+
+  fieldset {
+    border-color: #555;
+  }
+}
+
+.login-btn {
+  background: linear-gradient(
+    90deg,
+     #3d7af5 60%,
+      #E83E9B 100%
+    ) !important;
+  text-transform: none !important;
+}
+
+@media (max-width: 550px) {
+  .login-options {
+    flex-direction: column;
+  }
+
+  .or-divider {
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-top: 1px solid #555;
+
+    span {
+      top: 50%;
+      left: 50%;
+      padding: 0 12px;
+    }
+  }
+
+  .qr-login,
+  .phone-login {
+    width: 100%;
+  }
+}
+
